@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button:disabled{
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+button:disabled:hover{
+  background-color: gray;
+  transform: scale(1);
+}
+
+.primary__btn{
+  @apply w-28 py-4 rounded-md bg-blue-600 text-slate-100 hover:bg-blue-700 hover:scale-110 transition ease-in duration-300 text-center
+}
